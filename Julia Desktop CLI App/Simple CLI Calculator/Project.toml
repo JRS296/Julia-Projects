@@ -1,0 +1,4 @@
+name = "Dum Calculator"
+uuid = "0e68a58c-e093-43b3-821c-e429687dcee3"
+authors = ["JRS <jrs296@skiff.com>"]
+version = "1.0.0"
