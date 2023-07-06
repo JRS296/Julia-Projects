@@ -1,2 +1,3 @@
-# Julia-Files
-Files from experimenting with Julia
+# Julia Projects
+
+Bunch of Projects experimenting with Julia's capabilites as a Python alternative.
