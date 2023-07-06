@@ -1,0 +1,578 @@
+PS D:\CompSci - Learn\Julia Projects> julia "d:\CompSci - Learn\Julia Projects\Iris Data Set App\src.jl"
+ERROR: LoadError: ArgumentError: Package DataVoyager not found in current path.       
+- Run `import Pkg; Pkg.add("DataVoyager")` to install the DataVoyager package.        
+Stacktrace:
+ [1] macro expansion
+   @ .\loading.jl:1630 [inlined]
+ [2] macro expansion
+   @ .\lock.jl:267 [inlined]
+ [3] require(into::Module, mod::Symbol)
+   @ Base .\loading.jl:1611
+in expression starting at d:\CompSci - Learn\Julia Projects\Iris Data Set App\src.jl:1
+PS D:\CompSci - Learn\Julia Projects> cd "Iris Data Set App"
+PS D:\CompSci - Learn\Julia Projects\Iris Data Set App> julia
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.    
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.9.2 (2023-07-05)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia> pwd()
+   Installed TextParse ─────────────────── v1.0.2
+   Installed OpenSpecFun_jll ───────────── v0.5.5+0
+   Installed MacroTools ────────────────── v0.5.10
+   Installed GenericLinearAlgebra ──────── v0.3.11
+   Installed VegaDatasets ──────────────── v2.1.1
+   Installed TableShowUtils ────────────── v0.2.5
+   Installed Missings ──────────────────── v1.1.0
+   Installed CodecZlib ─────────────────── v0.7.1
+   Installed TableTraitsUtils ──────────── v1.0.2
+   Installed ExceptionUnwrapping ───────── v0.1.9
+   Installed DocStringExtensions ───────── v0.9.3
+  Downloaded artifact: OpenSSL
+  Downloaded artifact: nodejs_app
+  Downloaded artifact: vegalite_app
+  Downloaded artifact: electronjs_app
+  Downloaded artifact: OpenSpecFun
+    Updating `D:\CompSci - Learn\Julia Projects\Iris Data Set App\Project.toml`
+  [5721bf48] + DataVoyager v1.1.0
+  [0ae4a718] + VegaDatasets v2.1.1
+  [112f6efa] + VegaLite v3.2.2
+    Updating `D:\CompSci - Learn\Julia Projects\Iris Data Set App\Manifest.toml`
+  [d1d4a3ce] + BitFlags v0.1.7
+  [e1450e63] + BufferedStreams v1.2.0
+  [944b1d66] + CodecZlib v0.7.1
+  [34da2185] + Compat v4.7.0
+  [f0e56b4a] + ConcurrentUtilities v2.2.0
+  [187b0558] + ConstructionBase v1.5.2
+  [9a962f9c] + DataAPI v1.15.0
+  [864edb3b] + DataStructures v0.18.14
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [e7dc6d0d] + DataValues v0.4.13
+  [5721bf48] + DataVoyager v1.1.0
+  [ffbed154] + DocStringExtensions v0.9.3
+  [497a8b3b] + DoubleFloats v1.2.4
+  [a1bb12fb] + Electron v4.1.1
+  [460bff9d] + ExceptionUnwrapping v0.1.9
+  [5789e2e9] + FileIO v1.16.1
+  [8fc22ac5] + FilePaths v0.8.3
+  [48062228] + FilePathsBase v0.9.20
+  [14197337] + GenericLinearAlgebra v0.3.11
+  [cd3eb016] + HTTP v1.9.8
+  [842dd82b] + InlineStrings v1.4.0
+  [92d709cd] + IrrationalConstants v0.2.2
+  [1c8ee90f] + IterableTables v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.4.1
+  [682c06a0] + JSON v0.21.4
+  [7d188eb4] + JSONSchema v1.1.0
+  [2ab3a3ac] + LogExpFunctions v0.3.24
+  [e6f89c97] + LoggingExtras v1.0.0
+  [1914dd2f] + MacroTools v0.5.10
+  [739be429] + MbedTLS v1.1.7
+  [e1d29d7a] + Missings v1.1.0
+  [2bd173c7] + NodeJS v2.0.0
+  [4d1e1d77] + Nullables v1.0.0
+  [4d8831e6] + OpenSSL v1.4.1
+  [bac558e1] + OrderedCollections v1.6.0
+  [69de0a69] + Parsers v2.7.1
+  [f27b6e38] + Polynomials v3.2.13
+  [aea7be01] + PrecompileTools v1.1.2
+  [21216c6a] + Preferences v1.4.0
+  [be4d8f0f] + Quadmath v0.5.9
+  [3cdcf5f2] + RecipesBase v1.3.4
+  [189a3867] + Reexport v1.2.2
+  [ae029012] + Requires v1.3.0
+  [efcf1570] + Setfield v1.1.1
+  [777ac1f9] + SimpleBufferStream v1.1.0
+  [276daf66] + SpecialFunctions v2.3.0
+  [1e83bf80] + StaticArraysCore v1.4.0
+  [5e66a065] + TableShowUtils v0.2.5
+  [3783bdb8] + TableTraits v1.0.1
+  [382cd787] + TableTraitsUtils v1.0.2
+  [e0df1984] + TextParse v1.0.2
+  [3bb67fe8] + TranscodingStreams v0.9.13
+  [30578b45] + URIParser v0.4.1
+  [5c2747f8] + URIs v1.4.2
+  [239c3e63] + Vega v2.6.2
+  [0ae4a718] + VegaDatasets v2.1.1
+  [112f6efa] + VegaLite v3.2.2
+  [ea10d353] + WeakRefStrings v1.4.2
+  [458c3c95] + OpenSSL_jll v3.0.9+0
+  [efe28fd5] + OpenSpecFun_jll v0.5.5+0
+  [0dad84c5] + ArgTools v1.1.1
+  [56f22d72] + Artifacts
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [f43a241f] + Downloads v1.6.0
+  [7b1f6079] + FileWatching
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [b27032c2] + LibCURL v0.6.3
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [ca575930] + NetworkOptions v1.2.0
+  [44cfe95a] + Pkg v1.9.2
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA v0.7.0
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [fa267f1f] + TOML v1.0.3
+  [a4e569a6] + Tar v1.10.0
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+  [e66e0078] + CompilerSupportLibraries_jll v1.0.5+0
+  [deac9b47] + LibCURL_jll v7.84.0+0
+  [29816b5a] + LibSSH2_jll v1.10.2+0
+  [c8ffd9c3] + MbedTLS_jll v2.28.2+0
+  [14a3606d] + MozillaCACerts_jll v2022.10.11
+  [4536629a] + OpenBLAS_jll v0.3.21+4
+  [05823500] + OpenLibm_jll v0.8.1+0
+  [83775a58] + Zlib_jll v1.2.13+0
+  [8e850b90] + libblastrampoline_jll v5.8.0+0
+  [8e850ede] + nghttp2_jll v1.48.0+0
+  [3f19e933] + p7zip_jll v17.4.0+0
+Precompiling project...
+  63 dependencies successfully precompiled in 80 seconds. 4 already precompiled.
+
+(Iris Data Set App) pkg> status
+Status `D:\CompSci - Learn\Julia Projects\Iris Data Set App\Project.toml`
+  [5721bf48] DataVoyager v1.1.0
+  [0ae4a718] VegaDatasets v2.1.1
+  [112f6efa] VegaLite v3.2.2
+
+julia> julia "d:\CompSci - Learn\Julia Projects\Iris Data Set App\src.jl"
+ERROR: syntax: extra token """ after end of expression
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+julia> julia "d:\CompSci - Learn\Julia Projects\Iris Data Set App\src.jl"
+ERROR: syntax: extra token """ after end of expression
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+julia> julia "d:\CompSci - Learn\Julia Projects\Iris Data Set App\tempCodeRunnerFile.jl"
+ERROR: syntax: extra token """ after end of expression
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+julia> julia "d:\CompSci - Learn\Julia Projects\Iris Data Set App\src.jl"
+ERROR: syntax: extra token """ after end of expression
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+julia> julia "d:\CompSci - Learn\Julia Projects\Iris Data Set App\src.jl"
+ERROR: syntax: extra token """ after end of expression
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+julia> include src.jl
+ERROR: syntax: extra token "src" after end of expression
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+julia> include("src.jl")
+voyagerapp (generic function with 1 method)
+
+julia> voyagerapp()
+
+(hit Enter to close app)
+[18880:0706/174746.977:ERROR:gpu_init.cc(481)] Passthrough is not supported, GL is disabled, ANGLE is 
+
+
+julia> uuid
+ERROR: UndefVarError: `uuid` not defined
+
+julia> uuid4()
+ERROR: UndefVarError: `uuid4` not defined
+Stacktrace:
+ [1] top-level scope
+   @ REPL[14]:1
+
+julia> using UUIDs
+
+julia> uuid4()
+UUID("8bfc59bf-8b37-422a-a897-73397a93a398")
+
+julia> cd("VoyagerApp")
+
+(Iris Data Set App) pkg> status
+Status `D:\CompSci - Learn\Julia Projects\Iris Data Set App\Project.toml`
+  [5721bf48] DataVoyager v1.1.0
+  [0ae4a718] VegaDatasets v2.1.1
+  [112f6efa] VegaLite v3.2.2
+
+(Iris Data Set App) pkg> 
+
+(Iris Data Set App) pkg> status
+Status `D:\CompSci - Learn\Julia Projects\Iris Data Set App\Project.toml`
+  [5721bf48] DataVoyager v1.1.0
+  [0ae4a718] VegaDatasets v2.1.1
+  [112f6efa] VegaLite v3.2.2
+
+julia> pwd()
+"D:\\CompSci - Learn\\Julia Projects\\Iris Data Set App\\VoyagerApp"
+
+(Iris Data Set App) pkg> activate .
+  Activating project at `D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp`
+
+(Voyager Iris App) pkg> status
+Project Voyager Iris App v1.0.0
+Status `D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp\project.toml`
+  [5721bf48] DataVoyager
+  [0ae4a718] VegaDatasets
+  [112f6efa] VegaLite
+
+(Voyager Iris App) pkg> resolve
+ERROR: expected the file `src/Voyager Iris App.jl` to exist for package `Voyager Iris App` at `D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp`
+
+(VoyagerApp) pkg> activate .
+  Activating project at `D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp`
+
+(VoyagerApp) pkg> status
+Project VoyagerApp v1.0.0
+Status `D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp\project.toml`
+  [5721bf48] DataVoyager
+  [0ae4a718] VegaDatasets
+  [112f6efa] VegaLite
+
+(VoyagerApp) pkg> resolve
+    Updating `D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp\project.toml`
+  [5721bf48] + DataVoyager v1.1.0
+  [0ae4a718] + VegaDatasets v2.1.1
+  [112f6efa] + VegaLite v3.2.2
+    Updating `D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp\Manifest.toml`
+  [d1d4a3ce] + BitFlags v0.1.7
+  [e1450e63] + BufferedStreams v1.2.0
+  [944b1d66] + CodecZlib v0.7.1
+  [34da2185] + Compat v4.7.0
+  [f0e56b4a] + ConcurrentUtilities v2.2.0
+  [187b0558] + ConstructionBase v1.5.2
+  [9a962f9c] + DataAPI v1.15.0
+  [864edb3b] + DataStructures v0.18.14
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [e7dc6d0d] + DataValues v0.4.13
+  [5721bf48] + DataVoyager v1.1.0
+  [ffbed154] + DocStringExtensions v0.9.3
+  [497a8b3b] + DoubleFloats v1.2.4
+  [a1bb12fb] + Electron v4.1.1
+  [460bff9d] + ExceptionUnwrapping v0.1.9
+  [5789e2e9] + FileIO v1.16.1
+  [8fc22ac5] + FilePaths v0.8.3
+  [48062228] + FilePathsBase v0.9.20
+  [14197337] + GenericLinearAlgebra v0.3.11
+  [cd3eb016] + HTTP v1.9.8
+  [842dd82b] + InlineStrings v1.4.0
+  [92d709cd] + IrrationalConstants v0.2.2
+  [1c8ee90f] + IterableTables v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.4.1
+  [682c06a0] + JSON v0.21.4
+  [7d188eb4] + JSONSchema v1.1.0
+  [2ab3a3ac] + LogExpFunctions v0.3.24
+  [e6f89c97] + LoggingExtras v1.0.0
+  [1914dd2f] + MacroTools v0.5.10
+  [739be429] + MbedTLS v1.1.7
+  [e1d29d7a] + Missings v1.1.0
+  [2bd173c7] + NodeJS v2.0.0
+  [4d1e1d77] + Nullables v1.0.0
+  [4d8831e6] + OpenSSL v1.4.1
+  [bac558e1] + OrderedCollections v1.6.0
+  [69de0a69] + Parsers v2.7.1
+  [f27b6e38] + Polynomials v3.2.13
+  [aea7be01] + PrecompileTools v1.1.2
+  [21216c6a] + Preferences v1.4.0
+  [be4d8f0f] + Quadmath v0.5.9
+  [3cdcf5f2] + RecipesBase v1.3.4
+  [189a3867] + Reexport v1.2.2
+  [ae029012] + Requires v1.3.0
+  [efcf1570] + Setfield v1.1.1
+  [777ac1f9] + SimpleBufferStream v1.1.0
+  [276daf66] + SpecialFunctions v2.3.0
+  [1e83bf80] + StaticArraysCore v1.4.0
+  [5e66a065] + TableShowUtils v0.2.5
+  [3783bdb8] + TableTraits v1.0.1
+  [382cd787] + TableTraitsUtils v1.0.2
+  [e0df1984] + TextParse v1.0.2
+  [3bb67fe8] + TranscodingStreams v0.9.13
+  [30578b45] + URIParser v0.4.1
+  [5c2747f8] + URIs v1.4.2
+  [239c3e63] + Vega v2.6.2
+  [0ae4a718] + VegaDatasets v2.1.1
+  [112f6efa] + VegaLite v3.2.2
+  [ea10d353] + WeakRefStrings v1.4.2
+  [458c3c95] + OpenSSL_jll v3.0.9+0
+  [efe28fd5] + OpenSpecFun_jll v0.5.5+0
+  [0dad84c5] + ArgTools v1.1.1
+  [56f22d72] + Artifacts
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [f43a241f] + Downloads v1.6.0
+  [7b1f6079] + FileWatching
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [b27032c2] + LibCURL v0.6.3
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [ca575930] + NetworkOptions v1.2.0
+  [44cfe95a] + Pkg v1.9.2
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA v0.7.0
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [fa267f1f] + TOML v1.0.3
+  [a4e569a6] + Tar v1.10.0
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+  [e66e0078] + CompilerSupportLibraries_jll v1.0.5+0
+  [deac9b47] + LibCURL_jll v7.84.0+0
+  [29816b5a] + LibSSH2_jll v1.10.2+0
+  [c8ffd9c3] + MbedTLS_jll v2.28.2+0
+  [14a3606d] + MozillaCACerts_jll v2022.10.11
+  [4536629a] + OpenBLAS_jll v0.3.21+4
+  [05823500] + OpenLibm_jll v0.8.1+0
+  [83775a58] + Zlib_jll v1.2.13+0
+  [8e850b90] + libblastrampoline_jll v5.8.0+0
+  [8e850ede] + nghttp2_jll v1.48.0+0
+  [3f19e933] + p7zip_jll v17.4.0+0
+
+julia> cd("..")
+
+julia> pwd()
+"D:\\CompSci - Learn\\Julia Projects\\Iris Data Set App"
+
+julia> add PackageCompiler
+ERROR: syntax: extra token "PackageCompiler" after end of expression
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+(VoyagerApp) pkg> status
+Project VoyagerApp v1.0.0
+Status `D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp\project.toml`
+  [5721bf48] DataVoyager v1.1.0
+  [0ae4a718] VegaDatasets v2.1.1
+  [112f6efa] VegaLite v3.2.2
+
+julia> pwd()
+"D:\\CompSci - Learn\\Julia Projects\\Iris Data Set App"
+
+(VoyagerApp) pkg> activate .
+  Activating project at `D:\CompSci - Learn\Julia Projects\Iris Data Set App`
+
+(Iris Data Set App) pkg> add PackageCompiler
+   Resolving package versions...
+    Updating `D:\CompSci - Learn\Julia Projects\Iris Data Set App\Project.toml`
+  [9b87118b] + PackageCompiler v2.1.7
+    Updating `D:\CompSci - Learn\Julia Projects\Iris Data Set App\Manifest.toml`
+  [9b87118b] + PackageCompiler v2.1.7
+  [05181044] + RelocatableFolders v1.0.0
+  [6c6a2e73] + Scratch v1.2.0
+  [4af54fe1] + LazyArtifacts
+
+(Iris Data Set App) pkg> status
+Status `D:\CompSci - Learn\Julia Projects\Iris Data Set App\Project.toml`
+  [5721bf48] DataVoyager v1.1.0
+  [9b87118b] PackageCompiler v2.1.7
+  [0ae4a718] VegaDatasets v2.1.1
+  [112f6efa] VegaLite v3.2.2
+
+julia> using PackageCompiler
+
+julia> create_app("VoyagerApp", "VAappCompiler");
+PackageCompiler: bundled artifacts:
+  ├── Electron
+  │   └── electronjs_app - 193.172 MiB
+  ├── NodeJS
+  │   └── nodejs_app - 79.322 MiB
+  ├── OpenSSL_jll - 21.165 MiB
+  ├── OpenSpecFun_jll - 798.680 KiB
+  ├── Vega
+  │   └── vegalite_app - 111.234 MiB
+  └── VegaLite
+      └── vegalite_app - [already bundled]
+  Total artifact file size: 405.673 MiB
+⠸ [00m:14s] PackageCompiler: compiling base system image (incremental=false)error during bootstrap:
+LoadError(at "D:\Julia\Julia-1.9.2\share\julia\base\compiler\compiler.jl" line 3: LoadError(at "compiler/optimize.jl" line 127: LoadError(at "compiler/ssair/driver.jl" line 22: InterruptException())))
+jl_ast_ctx_leave at C:/workdir/src\ast.c:270 [inlined]
+jl_fl_parse at C:/workdir/src\ast.c:831
+ijl_parse at C:/workdir/src\ast.c:1272
+jl_parse_eval_all at C:/workdir/src\toplevel.c:1020
+ijl_load_ at C:/workdir/src\toplevel.c:1093
+include at .\boot.jl:368
+include at D:\Julia\Julia-1.9.2\share\julia\base\compiler\compiler.jl:23
+jl_apply at C:/workdir/src\julia.h:1879 [inlined]
+do_call at C:/workdir/src\interpreter.c:126
+eval_value at C:/workdir/src\interpreter.c:226
+eval_stmt_value at C:/workdir/src\interpreter.c:177 [inlined]
+eval_body at C:/workdir/src\interpreter.c:624
+jl_interpret_toplevel_thunk at C:/workdir/src\interpreter.c:762
+top-level scope at compiler/ssair/driver.jl:22
+jl_toplevel_eval_flex at C:/workdir/src\toplevel.c:912
+jl_parse_eval_all at C:/workdir/src\toplevel.c:1046
+ijl_load_ at C:/workdir/src\toplevel.c:1093
+include at .\boot.jl:368
+include at D:\Julia\Julia-1.9.2\share\julia\base\compiler\compiler.jl:23
+jl_apply at C:/workdir/src\julia.h:1879 [inlined]
+do_call at C:/workdir/src\interpreter.c:126
+eval_value at C:/workdir/src\interpreter.c:226
+eval_stmt_value at C:/workdir/src\interpreter.c:177 [inlined]
+eval_body at C:/workdir/src\interpreter.c:624
+jl_interpret_toplevel_thunk at C:/workdir/src\interpreter.c:762
+top-level scope at compiler/optimize.jl:127
+jl_toplevel_eval_flex at C:/workdir/src\toplevel.c:912
+jl_parse_eval_all at C:/workdir/src\toplevel.c:1046
+ijl_load_ at C:/workdir/src\toplevel.c:1093
+include at .\boot.jl:368
+include at D:\Julia\Julia-1.9.2\share\julia\base\compiler\compiler.jl:23
+jl_apply at C:/workdir/src\julia.h:1879 [inlined]
+do_call at C:/workdir/src\interpreter.c:126
+eval_value at C:/workdir/src\interpreter.c:226
+eval_stmt_value at C:/workdir/src\interpreter.c:177 [inlined]
+eval_body at C:/workdir/src\interpreter.c:624
+jl_interpret_toplevel_thunk at C:/workdir/src\interpreter.c:762
+top-level scope at D:\Julia\Julia-1.9.2\share\julia\base\compiler\compiler.jl:164
+jl_toplevel_eval_flex at C:/workdir/src\toplevel.c:912
+jl_eval_module_expr at C:/workdir/src\toplevel.c:203 [inlined]
+jl_toplevel_eval_flex at C:/workdir/src\toplevel.c:715
+ijl_toplevel_eval at C:/workdir/src\toplevel.c:921 [inlined]
+ijl_toplevel_eval_in at C:/workdir/src\toplevel.c:971
+eval at .\boot.jl:370
+jl_apply at C:/workdir/src\julia.h:1879 [inlined]
+do_call at C:/workdir/src\interpreter.c:126
+eval_value at C:/workdir/src\interpreter.c:226
+eval_stmt_value at C:/workdir/src\interpreter.c:177 [inlined]
+eval_body at C:/workdir/src\interpreter.c:624
+jl_interpret_toplevel_thunk at C:/workdir/src\interpreter.c:762
+top-level scope at D:\Julia\Julia-1.9.2\share\julia\base\compiler\compiler.jl:3
+jl_toplevel_eval_flex at C:/workdir/src\toplevel.c:912
+jl_parse_eval_all at C:/workdir/src\toplevel.c:1046
+ijl_load_ at C:/workdir/src\toplevel.c:1093
+ijl_load at C:/workdir/src\toplevel.c:1106
+exec_program at C:/workdir/src\jlapi.c:532
+true_main at C:/workdir/src\jlapi.c:585
+jl_repl_entrypoint at C:/workdir/src\jlapi.c:717
+mainCRTStartup at C:/workdir/cli\loader_exe.c:59
+BaseThreadInitThunk at C:\WINDOWS\System32\KERNEL32.DLL (unknown line)
+RtlUserThreadStart at C:\WINDOWS\SYSTEM32\ntdll.dll (unknown line)
+
+┌ Error: internal error in spinner
+│   exception =
+│    InterruptException:
+│    Stacktrace:
+│      [1] sigatomic_end
+│        @ .\c.jl:452 [inlined]
+│      [2] uv_write(s::Base.TTY, p::Ptr{UInt8}, n::UInt64)
+│        @ Base .\stream.jl:1044
+│      [3] unsafe_write(s::Base.TTY, p::Ptr{UInt8}, n::UInt64)
+│        @ Base .\stream.jl:1120
+│      [4] write
+│        @ .\strings\io.jl:244 [inlined]
+│      [5] print
+│        @ .\strings\io.jl:246 [inlined]
+│      [6] render(s::PackageCompiler.TerminalSpinners.Spinner{Base.TTY}, spinner::String, color::Symbol)
+│        @ PackageCompiler.TerminalSpinners C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\ext\TerminalSpinners.jl:100
+│      [7] render (repeats 2 times)
+│        @ C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\ext\TerminalSpinners.jl:97 [inlined]
+│      [8] (::PackageCompiler.TerminalSpinners.var"#5#6"{PackageCompiler.TerminalSpinners.Spinner{Base.TTY}})(timer::Timer)
+│        @ PackageCompiler.TerminalSpinners C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\ext\TerminalSpinners.jl:119
+│      [9] macro expansion
+│        @ .\asyncevent.jl:281 [inlined]
+│     [10] (::Base.var"#702#703"{PackageCompiler.TerminalSpinners.var"#5#6"{PackageCompiler.TerminalSpinners.Spinner{Base.TTY}}, Timer})()
+│        @ Base .\task.jl:134
+└ @ PackageCompiler.TerminalSpinners C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\ext\TerminalSpinners.jl:123
+✖ [00m:16s] PackageCompiler: compiling base system image (incremental=false)?25h
+
+ERROR: failed process: Process(`'D:\Julia\Julia-1.9.2\bin\julia.exe' --color=yes --startup-file=no --pkgimages=no --cpu-target 'generic;sandybridge,-xsaveopt,clone_all;haswell,-rdrnd,base(1)' --output-ji 'C:\Users\jonat\AppData\Local\Temp\jl_fqfl25\corecompiler.ji' 'D:\Julia\Julia-1.9.2\share\julia\base\compiler\compiler.jl'`, ProcessExited(1)) [1]
+
+Stacktrace:
+  [1] pipeline_error
+    @ .\process.jl:565 [inlined]
+  [2] read(cmd::Cmd)
+    @ Base .\process.jl:449
+  [3] (::PackageCompiler.var"#13#17"{String, Cmd, Vector{String}, String, String, String, String})()
+    @ PackageCompiler C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:240
+  [4] cd(f::PackageCompiler.var"#13#17"{String, Cmd, Vector{String}, String, String, String, String}, dir::String)
+    @ Base.Filesystem .\file.jl:101
+  [5] macro expansion
+    @ C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:233 [inlined]
+  [6] #12
+    @ C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\ext\TerminalSpinners.jl:157 [inlined]
+  [7] spin(f::PackageCompiler.var"#12#16"{String, Cmd, Vector{String}, String, String, String, String, String}, s::PackageCompiler.TerminalSpinners.Spinner{Base.TTY})     
+    @ PackageCompiler.TerminalSpinners C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\ext\TerminalSpinners.jl:164
+  [8] macro expansion
+    @ C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\ext\TerminalSpinners.jl:157 [inlined]
+  [9] create_fresh_base_sysimage(stdlibs::Vector{String}; cpu_target::String, sysimage_build_args::Cmd)
+    @ PackageCompiler C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:232
+ [10] create_fresh_base_sysimage
+    @ C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:217 [inlined]
+ [11] create_sysimage(packages::Vector{String}; sysimage_path::String, project::String, precompile_execution_file::Vector{String}, precompile_statements_file::Vector{String}, incremental::Bool, filter_stdlibs::Bool, cpu_target::String, script::Nothing, sysimage_build_args::Cmd, include_transitive_dependencies::Bool, base_sysimage::Nothing, 
+julia_init_c_file::Nothing, version::Nothing, soname::Nothing, compat_level::String, extra_precompiles::String)
+    @ PackageCompiler C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:536
+ [12] create_sysimage
+    @ C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:484 [inlined]
+ [13] create_app(package_dir::String, app_dir::String; executables::Nothing, precompile_execution_file::Vector{String}, precompile_statements_file::Vector{String}, incremental::Bool, filter_stdlibs::Bool, force::Bool, c_driver_program::String, cpu_target::String, include_lazy_artifacts::Bool, sysimage_build_args::Cmd, include_transitive_dependencies::Bool, script::Nothing)
+    @ PackageCompiler C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:810
+ [14] create_app(package_dir::String, app_dir::String)
+    @ PackageCompiler C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:759
+ [15] top-level scope
+    @ REPL[35]:1
+
+julia> create_app("VoyagerApp", "VAappCompiler"; precompile_execution_file = "VoyagerApp/precompile_app.jl")
+ERROR: directory "VAappCompiler" already exists, use `force=true` to overwrite (will completely remove the directory)
+Stacktrace:
+ [1] error(::String, ::String)
+   @ Base .\error.jl:44
+ [2] #try_rm_dir#29
+   @ C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:673 [inlined]
+ [3] try_rm_dir
+   @ C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:670 [inlined]
+ [4] create_app(package_dir::String, app_dir::String; executables::Nothing, precompile_execution_file::String, precompile_statements_file::Vector{String}, incremental::Bool, filter_stdlibs::Bool, force::Bool, c_driver_program::String, cpu_target::String, include_lazy_artifacts::Bool, sysimage_build_args::Cmd, include_transitive_dependencies::Bool, script::Nothing)
+   @ PackageCompiler C:\Users\jonat\.julia\packages\PackageCompiler\b2smD\src\PackageCompiler.jl:788
+ [5] top-level scope
+   @ REPL[36]:1
+
+julia> create_app("VoyagerApp", "VAappCompiled"; precompile_execution_file = "VoyagerApp/precompile_app.jl")
+PackageCompiler: bundled artifacts:
+  ├── Electron
+  │   └── electronjs_app - 193.172 MiB
+  ├── NodeJS
+  │   └── nodejs_app - 79.322 MiB
+  ├── OpenSSL_jll - 21.165 MiB
+  ├── Vega
+  │   └── vegalite_app - 111.234 MiB
+  └── VegaLite
+      └── vegalite_app - [already bundled]
+  Total artifact file size: 405.673 MiB
+✔ [05m:41s] PackageCompiler: compiling base system image (incremental=false)
+Precompiling project...
+  68 dependencies successfully precompiled in 699 seconds
+[ Info: PackageCompiler: Executing D:\CompSci - Learn\Julia Projects\Iris Data Set App\VoyagerApp\precompile_app.jl => C:\Users\jonat\AppData\Local\Temp\jl_packagecompiler_zze5Ci\jl_4D29.tmp                                                                                                                                                        _zze5Ci\jl_4D29.tmp
+
+(hit Enter to close app)
+
+[ Info: PackageCompiler: Done
+✔ [08m:36s] PackageCompiler: compiling nonincremental system image
